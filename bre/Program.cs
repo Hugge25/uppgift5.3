@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Diagnostics;
 
 namespace Program
@@ -11,29 +11,23 @@ namespace Program
             string[] rätt = { "Paris", "Måns Zelmerlöw", "Midsommar", "Blåval" };
 
             bool kör = true;
+
             while (kör = true)
             {
-                Console.WriteLine();
-                Console.WriteLine("Välj mellan fråga 1-4");
+                Console.WriteLine("\nVälj mellan fråga 1-4");
                 int val = int.Parse(Console.ReadLine());
 
-                Console.WriteLine();
-                Console.WriteLine();
-                Console.WriteLine($"Fråga {val}");
+                Console.WriteLine($"\n\nFråga {val}");
                 Console.WriteLine(fraga[val - 1]);
                 string svar = Console.ReadLine();
 
                 if (svar == rätt[val - 1])
                 {
-                    Console.WriteLine();
-                    Console.WriteLine("Rätt!!!");
-                    Console.WriteLine();
+                    Console.WriteLine("\nRätt!!!\n");
                 }
                 else
                 {
-                    Console.WriteLine();
-                    Console.WriteLine("Fel >:(");
-                    Console.WriteLine();
+                    Console.WriteLine("\nFel >:(\n");
                 }
 
                 Console.WriteLine("Vill du fortsätta? y/n");
